@@ -34,9 +34,9 @@ class App extends React.Component {
           </button>
         </form>
         <main> 
-          {memes.map(m=>{
-            return <img alt="memes" key={m.id}/>
-          })}
+            {memes.map(meme=>{
+              return <Memes key={meme.id} meme={meme} />
+            })}        
         </main>
       </div>
     );
